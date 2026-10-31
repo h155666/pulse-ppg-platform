@@ -1,0 +1,9 @@
+# 课题 5-4《基于Streamlit的脉搏波信号生成与特征分析网页端平台设计》依赖清单
+# 全部为 CPU 版本，无需 GPU（大方向背景 1 节硬约束）
+# 版本已在本机（Windows / Python 3.13）实测通过
+streamlit==1.66.0
+numpy==2.5.4
+scipy==1.18.1
+pandas==3.0.6
+matplotlib==3.11.2
+PyWavelets==1.8.0

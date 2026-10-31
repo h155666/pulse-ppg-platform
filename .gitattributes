@@ -1,0 +1,13 @@
+# 默认按文本处理，但统一用 LF（避免 Windows 上 CRLF 反复改动）
+* text=auto eol=lf
+
+# .bat 必须保持 CRLF，否则 cmd 解析异常
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 数据文件按二进制处理：不做任何换行/编码转换，保证字节级可复现
+*.csv  -text
+*.tsv  -text
+*.xlsx -text
+*.png  binary
+*.jpg  binary
