@@ -5,6 +5,11 @@ rem  Copies the hidden-window VBS launcher into the user's
 rem  Startup folder. No administrator rights needed.
 rem  Run uninstall_autostart.bat to undo. Double-click once.
 rem
+rem  NOTE: if the scheduled task "PPGPlatform" is already
+rem  installed (schtasks /query /tn PPGPlatform), do NOT run
+rem  this - two autostart entries would fight over port 8502.
+rem  This script is the fallback for machines without the task.
+rem
 rem  Why a .vbs instead of a .lnk:  a shortcut still shows a
 rem  minimized console window at logon, while the VBS runs
 rem  run_server.bat fully hidden (window style 0). The template
