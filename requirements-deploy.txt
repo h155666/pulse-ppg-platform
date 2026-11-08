@@ -1,0 +1,10 @@
+# 云端部署用弹性依赖清单（requirements-deploy.txt）
+# 与 requirements.txt（本机 Windows/Python 3.13 实测的精确版本）的区别：
+# 这里只写兼容下限，让 pip 在不同 Python 版本的部署环境里自行解析可用版本。
+# 平台代码同时兼容 pandas 2.x / 3.x 与 Streamlit 近年版本。
+streamlit>=1.40
+numpy>=1.26
+scipy>=1.11
+pandas>=2.1
+matplotlib>=3.8
+PyWavelets>=1.5
